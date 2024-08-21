@@ -34,6 +34,7 @@ list_of_files=[
 
 for filepath in list_of_files:
     file_path = Path(filepath)
+    print(filepath)
     filedir, filename =os.path.split(file_path)
     if filedir !="":
         os.makedirs(filedir,exist_ok=True)
